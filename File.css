@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    /* position: relative; */
+}
+
+.navbar-toggler{
+background: #ff6600;
+}
+#navbarTogglerDemo01{
+    z-index: 1;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.plane {
+    color: #ff6600;
+}
+
+.navmain {
+    background-color: #ff6600;
+}
+
+.navmain li a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navmain li:hover {
+    background-color: #e8660f;
+    transform: scale(1.10);
+    transition: 0.4s ease-in-out all;
+}
+
+.videomain video {
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+}
+
+.head i {
+    color: #ff6600;
+}
+
+@media (max-width:426px) {
+    .welcome {
+        text-align: center;
+    }
+}
+@media (max-width: 321px){
+    .videomain video {
+        height: 536px;
+    }
+}
+/* Headding Contant */
+.welcome {
+    font-family: 'google Fonts';
+    color: white;
+
+}
+
+.travel {
+    color: #ff6600;
+}
+
+/*3 Image1 section */
+.image {
+    position: relative;
+}
+
+.imagmain img {
+    filter: grayscale(100%);
+}
+
+.image:hover .imagmain img {
+    filter: none;
+    transition: 0.10s ease-in-out;
+}
+
+.datelocation {
+    position: absolute;
+    content: "";
+    color: white;
+    bottom: 0px;
+}
+
+.roundimg img {
+    width: 109%;
+}
+
+.somecontant {
+    position: relative;
+}
+
+.planeicone {
+    position: absolute;
+    width: 100%;
+    bottom: 1%;
+}
+
+.planeicone img {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transition: all ease-in-out 0.7s;
+}
+
+.image:hover .planeicone img {
+    position: absolute;
+    left: 70%;
+    top: 110%;
+}
+
+.viewmore {
+    position: absolute;
+    bottom: -2px;
+    left: 34%;
+}
+
+.location i {
+    width: 10%;
+}
+
+@media (max-width:1025px) {
+
+    .roundimg img {
+        width: 92%;
+    }
+
+    .heading h1 {
+        font-size: 25px;
+    }
+
+    .location {
+        font-size: 12px;
+    }
+
+    .viewmore {
+        left: 28%;
+    }
+
+    .viewmore h3 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:769px) {
+    .roundimg img {
+        width: 99.5%;
+    }
+
+    .viewmore h3 {
+        font-size: 22px;
+    }
+
+    .datelocation {
+        bottom: 0%;
+    }
+}
+
+@media (max-width:426px) {
+    .roundimg img {
+        width: 112.8%;
+    }
+
+    .viewmore {
+        left: 45%;
+    }
+
+    .datelocation {
+        bottom: 2.5%;
+    }
+
+    .image {
+        padding: 10px;
+    }
+    .somecontant{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    .roundimg img {
+        width: 99%;
+    }
+    .viewmore {
+        left: 34%;
+    }
+    .somecontant{
+       margin-left: 10px;
+       padding: 0;
+    }
+}
+
+@media (max-width: 321px){
+.roundimg img {
+    width: 97%;
+}
+.somecontant{
+    margin-left: 5px;
+    padding: 0;
+ }
+}
+
+
+/*  */
+
+.reviews h2 {
+    color: #ff6600;
+}
+
+.transportmain h2 {
+    font-weight: 400;
+    font-family: 'google Fonts';
+}
+
+.price {
+    font-weight: 200;
+    font-family: 'google Fonts';
+}
+
+.transport {
+    width: 140px;
+    border: 2px solid black;
+    border-radius: 70px;
+}
+
+.transport:hover {
+    border: 2px dashed #ff6600;
+    transform: rotate(1500deg);
+    transition: 80s all;
+}
+
+.transport:hover img {
+    transform: rotate(-1500deg);
+    transition: 80s all;
+}
+
+@media (max-width:1025px) {
+    .transport {
+        width: 110px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .cardhead h1 {
+        font-size: 25px;
+    }
+
+    .address h2 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width:769px) {
+    .cardhead h1 {
+        font-size: 40px;
+    }
+
+}
+
+/* Hotels */
+
+.hotel img {
+    width: 100%;
+}
+
+.hotel {
+    position: relative;
+}
+
+
+.promotinal {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    font-family: 'google Fonts';
+    opacity: 0;
+}
+
+.promohead {
+    background-color: #ff6600;
+    width: 100%;
+}
+
+.hotel:hover .promotinal {
+    opacity: 1;
+    transition: 0.7s ease-in-out;
+}
+
+.hotel:hover img {
+    opacity: 0.9;
+    /* transform: scale(1.2); */
+}
+
+.hotel:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+@media (max-width:426px) {
+    .hotel {
+        padding: 10px;
+    }
+
+    .promotinal {
+        width: 96%;
+    }
+}
+
+/* Restaurants */
+
+.leftpart {
+    width: 50%;
+    background-color: beige;
+}
+
+.rightpart {
+    width: 50%;
+}
+
+.rightpart img {
+    width: 100%;
+}
+
+.cardhead h1 {
+    color: #ff6600;
+    font-weight: 100;
+}
+
+.address h2 {
+    color: #ff6600;
+}
+
+.starts i {
+    font-size: larger;
+    color: #ff6600;
+}
+
+.cards:hover img {
+    filter: grayscale(100%);
+    transition: 0.7s ease-in-out all;
+
+}
+
+@media (max-width:426px) {
+    .rightpart {
+        width: 100%;
+    }
+
+    .leftpart {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: rgb(0 0 0 / 70%);
+    position: relative;
+    padding: 15px 0 15px 0;
+}
+
+.links h6 {
+    padding: 10px;
+    background-color: black;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.place i {
+    color: #ff6600;
+}
+
+.place i:hover {
+    color: white;
+    border-radius: 15px;
+}
+
+.blackline {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+@media (max-width:1025px) {
+    .blackline {
+        bottom: -3%;
+    }
+}
+
+@media (max-width:426px) {
+    .footermain {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .heading {
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 321px){
+    .Foot{
+        padding-bottom: 40px;
+    }
+    }
